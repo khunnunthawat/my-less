@@ -19,6 +19,7 @@ export const FormLogin = () => {
       onFinishFailed={onFinishFailed}
       autoComplete='off'
     >
+      <span className='my-4 text-xl text-blue-500'>Login</span>
       <Form.Item
         label='Username'
         name='username'
