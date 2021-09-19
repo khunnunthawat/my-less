@@ -10,7 +10,7 @@ export default function Home() {
         <Title level={2} className='text-6xl font-bold text-blue-500'>
           Next.js Antd Less
         </Title>
-        <BtnLayout />
+        {/* <BtnLayout /> */}
       </main>
     </div>
   );
