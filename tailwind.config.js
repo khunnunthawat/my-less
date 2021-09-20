@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     mode: 'jit',
     purge: [
@@ -7,7 +9,12 @@ module.exports = {
     important: true,
     darkMode: false,
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Bebas', ...defaultTheme.fontFamily.sans],
+                bebas: ['Bebas Neue', 'Roboto ital'],
+            },
+        },
     },
     variants: {
         extend: {},

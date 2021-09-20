@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox, Pagination } from 'antd';
+import { TextMenuHead } from '../pages/index';
 
 export const FormLogin = () => {
   const onFinish = (values: any) => {
@@ -19,9 +20,8 @@ export const FormLogin = () => {
       onFinishFailed={onFinishFailed}
       autoComplete='off'
     >
-      <span className='my-4 text-xl text-blue-500'>Login</span>
       <Form.Item
-        label='Username'
+        label={<span className='my-4 text-lg font-bebas'>Username</span>}
         name='username'
         rules={[{ required: true, message: 'Please input your username!' }]}
       >
@@ -29,7 +29,7 @@ export const FormLogin = () => {
       </Form.Item>
 
       <Form.Item
-        label='Password'
+        label={<span className='my-4 text-lg font-bebas'>Password</span>}
         name='password'
         rules={[{ required: true, message: 'Please input your password!' }]}
       >
@@ -41,12 +41,14 @@ export const FormLogin = () => {
         valuePropName='checked'
         wrapperCol={{ offset: 8, span: 16 }}
       >
-        <Checkbox>Remember me</Checkbox>
+        <Checkbox>
+          <TextMenuHead title='Remember me' />
+        </Checkbox>
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button type='primary' htmlType='submit'>
-          Submit
+          <span className='text-white font-bebas'>Submit</span>
         </Button>
       </Form.Item>
       <Pagination defaultCurrent={1} total={50} />
