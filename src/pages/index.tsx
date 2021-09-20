@@ -14,7 +14,7 @@ export default function Home() {
         <Header className='header'>
           <Menu theme='light' mode='horizontal' defaultSelectedKeys={['2']}>
             <Menu.Item key='1'>
-              <TextMenuHead title='PANOORA ELLEVEN' />
+              <TextMenuHead title='ABCDEFG' />
             </Menu.Item>
             <Menu.Item key='2'>
               <TextMenuHead title='Home' />
