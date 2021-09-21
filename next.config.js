@@ -6,7 +6,7 @@ module.exports = withAntdLess({
     // modifyVars: { '@primary-color': '#04f' },
     modifyVars: {},
     // optional
-    lessVarsFilePath: './src/styles/antd-custom.less',
+    lessVarsFilePath: './src/assets/styles/antd-custom.less',
     // optional
     lessVarsFilePathAppendToEndOfContent: false,
     // optional https://github.com/webpack-contrib/css-loader#object
