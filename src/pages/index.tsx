@@ -1,4 +1,4 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb, Button } from 'antd';
 import { Typography } from 'antd';
 import { TitleMenuText } from '../components/Layouts/Typography/TextLayout';
 
@@ -46,6 +46,9 @@ export default function Home() {
               }}
             >
               Content
+              <Button type='primary' size='large'>
+                Button
+              </Button>
             </Content>
           </Layout>
         </Layout>
