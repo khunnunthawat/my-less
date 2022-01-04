@@ -1,6 +1,6 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb, Button } from 'antd';
 import { Typography } from 'antd';
-import { FormLogin } from '@/components/FormLogin';
+import { TitleMenuText } from '../components/Layouts/Typography/TextLayout';
 
 require('./index.less');
 
@@ -14,19 +14,19 @@ export default function Home() {
         <Header className='header'>
           <Menu theme='light' mode='horizontal' defaultSelectedKeys={['2']}>
             <Menu.Item key='1'>
-              <TextMenuHead title='ABCDEFG' />
+              <TitleMenuText title='ABCDEFG' />
             </Menu.Item>
             <Menu.Item key='2'>
-              <TextMenuHead title='Home' />
+              <TitleMenuText title='Home' />
             </Menu.Item>
             <Menu.Item key='3'>
-              <TextMenuHead title='Sport' />
+              <TitleMenuText title='Sport' />
             </Menu.Item>
             <Menu.Item key='4'>
-              <TextMenuHead title='E-Sport' />
+              <TitleMenuText title='E-Sport' />
             </Menu.Item>
             <Menu.Item key='5'>
-              <TextMenuHead title='Live' />
+              <TitleMenuText title='Live' />
             </Menu.Item>
           </Menu>
         </Header>
@@ -34,7 +34,7 @@ export default function Home() {
           <Layout style={{ padding: '0 24px 24px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>
-                <TextMenuHead title='Home' />
+                <TitleMenuText title='Home' />
               </Breadcrumb.Item>
             </Breadcrumb>
             <Content
@@ -45,7 +45,10 @@ export default function Home() {
                 minHeight: 280,
               }}
             >
-              <FormLogin />
+              Content
+              <Button type='primary' size='large'>
+                Button
+              </Button>
             </Content>
           </Layout>
         </Layout>
@@ -53,7 +56,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const TextMenuHead: React.FC<any> = ({ title }) => {
-  return <Text className='text-base font-bebas'>{title}</Text>;
-};
